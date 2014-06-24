@@ -1,26 +1,26 @@
 {
-  "name": "skeleton",
-  "version": "0.0.0",
-  "description": "A skeleton for turbonetix projects",
+  "name": "socket.io-logger",
+  "version": "0.0.0-alpha",
+  "description": "A socket.io-logger will log all of your events.",
   "main": "index.js",
   "scripts": {
     "test": "grunt"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/turbonetix/skeleton.git"
+    "url": "git://github.com/turbonetix/socket.io-logger.git"
   },
   "keywords": [
-    "bus.io",
-    "monitor",
-    "middleware"
+    "socket.io",
+    "events",
+    "logger"
   ],
   "author": "Nathan G. Romano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/turbonetix/skeleton/issues"
+    "url": "https://github.com/turbonetix/socket.io-logger/issues"
   },
-  "homepage": "https://github.com/turbonetix/skeleton",
+  "homepage": "https://github.com/turbonetix/socket.io-logger",
   "devDependencies": {
     "sandboxed-module": "^1.0.0",
     "coffee-script": "^1.7.1",

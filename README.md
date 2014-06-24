@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/turbonetix/skeleton.svg?branch=master)](https://travis-ci.org/turbonetix/skeleton)
-[![NPM version](https://badge.fury.io/js/skeleton.svg)](http://badge.fury.io/js/skeleton)
-[![David DM](https://david-dm.org/turbonetix/skeleton.png)](https://david-dm.org/turbonetix/skeleton.png)
+[![Build Status](https://travis-ci.org/turbonetix/socket.io-logger.svg?branch=master)](https://travis-ci.org/turbonetix/socket.io-logger)
+[![NPM version](https://badge.fury.io/js/socket.io-logger.svg)](http://badge.fury.io/js/socket.io-logger)
+[![David DM](https://david-dm.org/turbonetix/socket.io-logger.png)](https://david-dm.org/turbonetix/socket.io-logger.png)
 
 ![Bus.IO](https://raw.github.com/turbonetix/bus.io/master/logo.png)
 
-A skeleton we use for starting our projects!
+A socket.io-logger will log all of your `events`.
 
 # Installation and Environment Setup
 
@@ -12,11 +12,11 @@ Install node.js (See download and install instructions here: http://nodejs.org/)
 
 Clone this repository
 
-    > git clone git@github.com:turbonetix/skeleton.git
+    > git clone git@github.com:turbonetix/socket.io-logger.git
 
 cd into the directory and install the dependencies
 
-    > cd skeleton
+    > cd socket.io-logger
     > npm install && npm shrinkwrap --dev
 
 # Running Tests
