@@ -4,6 +4,8 @@
 
 ![Bus.IO](https://raw.github.com/turbonetix/bus.io/master/logo.png)
 
+WIP
+
 A socket.io-logger will log all of your `events`.
 
 # Installation and Environment Setup
