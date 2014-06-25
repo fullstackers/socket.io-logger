@@ -29,7 +29,6 @@
     "grunt": "^0.4.5"
   },
   "dependencies": {
-    "winston": "^0.7.3",
     "debug": "^1.0.2"
   }
 }
