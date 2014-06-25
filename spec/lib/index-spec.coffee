@@ -10,3 +10,9 @@ describe 'lib', ->
     When -> @version = @lib.version
     Then -> expect(@version).toEqual 1
 
+  describe '#', ->
+
+    When -> @res = @lib()
+    Then -> expect(typeof @res).toBe 'function'
+    And -> expect(@res instanceof @lib).toBe true
+
