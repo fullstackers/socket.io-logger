@@ -1,6 +1,6 @@
 {
   "name": "socket.io-logger",
-  "version": "0.0.0-alpha1",
+  "version": "0.0.0-alpha2",
   "description": "A socket.io-logger will log all of your events.",
   "main": "index.js",
   "scripts": {
@@ -26,9 +26,12 @@
     "coffee-script": "^1.7.1",
     "grunt-jasmine-bundle": "^0.2.0",
     "grunt-cli": "^0.1.13",
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "socket.io": "^1.0.6",
+    "socket.io-client": "^1.0.6"
   },
   "dependencies": {
-    "debug": "^1.0.2"
+    "debug": "^1.0.2",
+    "flat": "^1.2.1"
   }
 }
