@@ -1,7 +1,7 @@
 {
   "name": "socket.io-logger",
   "version": "0.0.0-alpha2",
-  "description": "A socket.io-logger will log all of your events.",
+  "description": "Simple logger middleware for socket.io.",
   "main": "index.js",
   "scripts": {
     "test": "grunt"
