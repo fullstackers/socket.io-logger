@@ -16,9 +16,9 @@ io.use(logger);
 
 # Features
 
-*Data is flattened with [flat](https://www.npmjs.org/package/flat "flat").
-*Customized formatting support.
-*Plugable interface to use with your favorite logger packages.
+* Data is flattened with [flat](https://www.npmjs.org/package/flat "flat").
+* Customized formatting support.
+* Plugable interface to use with your favorite logger packages.
 
 # API
 
