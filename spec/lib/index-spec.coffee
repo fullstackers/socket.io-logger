@@ -1,8 +1,10 @@
+EventEmitter = require('events').EventEmitter
 Flat = require 'flat'
 
 describe 'lib', ->
 
-  Given -> @sock = id: 1
+  Given -> @sock = new EventEmitter
+  Given -> @sock.id = 1
   Given -> @args = ['some event', {some: 'data'}]
   Given -> @cb = jasmine.createSpy 'cb'
   Given -> @line = '{"socket.id":1,"event.name":"some event","event.data.some":"data"}'
@@ -46,12 +48,13 @@ describe 'lib', ->
 
     Given -> @logger = @lib()
 
-    describe '# (sock:Object, args:Array)', ->
+    describe.only '# (sock:Object, args:Array)', ->
 
-      Given -> @sock.logger = @logger
+      Given -> @packet = data: @args
       Given -> @stream = jasmine.createSpyObj 'stream', ['write']
       Given -> @logger.stream @stream
-      When -> @sock.logger @args, @cb
+      Given -> @logger @sock, @cb
+      When -> @sock.onevent @packet
       Then -> expect(@stream.write).toHaveBeenCalled()
       And -> expect(@stream.write.argsForCall[0][0]).toEqual @line + '\n'
 

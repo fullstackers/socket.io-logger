@@ -3,8 +3,8 @@ var Logger = require('./..');
 var options = { format: Logger.defaultFormat, stream: { write: function (line) { process.stdout.write(line); } } };
 var logger = Logger(options);
 io.use(logger);
-io.on('done', function () {
-  this.emit('done');
+io.on('connection', function (sock) {
+  sock.emit('done');
 });
 
 setTimeout(function () {
@@ -14,9 +14,8 @@ setTimeout(function () {
     sock.emit('is');
     sock.emit('a');
     sock.emit('test');
-    sock.emit('done');
-  });
-  sock.on('done', function () {
-    process.exit(0);
+    setTimeout(function () {
+      process.exit(0);
+    }, 1000);
   });
 },1000);
