@@ -1,6 +1,6 @@
 {
   "name": "socket.io-logger",
-  "version": "0.0.0-alpha2",
+  "version": "0.0.0",
   "description": "Simple logger middleware for socket.io.",
   "main": "index.js",
   "scripts": {
